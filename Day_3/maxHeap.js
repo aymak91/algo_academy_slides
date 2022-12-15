@@ -40,7 +40,7 @@ class maxHeap {
         while (this.data[this.getLeftChildIndex(currentIdx)] !== undefined) {
             let biggestChildIdx = this.getLeftChildIndex(currentIdx);
 
-            if (this.data[this.getRightChildIndex(currentIdx)] !== undefined && this.data[this.getRightChildIndex(currentIdx) > this.data[this.getLeftChildIndex(currentIdx)]] ) {
+            if (this.data[this.getRightChildIndex(currentIdx)] !== undefined && this.data[this.getRightChildIndex(currentIdx)] > this.data[this.getLeftChildIndex(currentIdx)] ) {
                 biggestChildIdx = this.getRightChildIndex(currentIdx);
             }
 
